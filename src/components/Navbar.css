@@ -1,0 +1,189 @@
+/* 🌟 General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    padding: 25px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* 🔹 Logo Styling */
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+    color: #ffcc00;
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+/* ✅ Active Link Highlight */
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-links a.active {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Authentication & Profile Section */
+.auth-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 🔹 Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-icon {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-icon:hover {
+    color: #ffcc00;
+}
+
+/* 🔽 Dropdown Content */
+.dropdown-content {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    width: 180px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Show Dropdown on Hover */
+.profile-dropdown:hover .dropdown-content {
+    display: flex;
+    opacity: 1;
+}
+
+/* 🔹 Dropdown Items */
+.dropdown-content a, 
+.dropdown-content button {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔹 Hover Effect for Dropdown */
+.dropdown-content a:hover, 
+.dropdown-content button:hover {
+    background: #f0f0f0;
+}
+
+/* 🔹 Login Button */
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #ffcc00;
+    padding: 10px 15px;
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #ffb300;
+}
+
+/* ✅ Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔹 Responsive Navbar */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 15px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hide Profile & Login Button on Mobile */
+    .auth-container {
+        display: none;
+    }
+
+    /* Show Hamburger Menu */
+    .hamburger {
+        display: block;
+    }
+}

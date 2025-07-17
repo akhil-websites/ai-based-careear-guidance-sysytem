@@ -1,0 +1,180 @@
+
+  /* Footer Main Container */
+  .footer-container {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Footer Section General Styling */
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  /* Footer Titles */
+  .footer-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5);
+  }
+  
+  /* Footer Subtitle */
+  .footer-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+  
+  /* Footer Description */
+  .footer-description {
+    font-size: 1rem;
+    opacity: 0.8;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  /* Footer List */
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+  }
+  
+  .footer-list li {
+    margin: 8px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-list li:hover {
+    transform: translateX(5px);
+  }
+  
+  /* Footer Links */
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover {
+    color: #ffcc00;
+  }
+  
+  /* Social Media Section */
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer-social-link {
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .footer-social-link:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+  }
+  
+  /* Newsletter Subscription */
+  .footer-newsletter input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .footer-newsletter .footer-button {
+    background: #ffcc00;
+    color: black;
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-newsletter .footer-button:hover {
+    background: #ffd633;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Section */
+  .footer-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Copyright Notice */
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+  
+    .footer-section {
+        margin-bottom: 20px;
+    }
+  
+    .footer-list li {
+        font-size: 0.9rem;
+    }
+  
+    .footer-newsletter input {
+        width: 100%;
+    }
+  
+    .footer-newsletter .footer-button {
+        width: 100%;
+    }
+  }
+  

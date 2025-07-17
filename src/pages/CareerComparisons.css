@@ -1,0 +1,188 @@
+/* Main Container */
+.career-comparison-main-container {
+  max-width: 1000px;
+  margin: 90px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+/* Section Title */
+.career-comparison-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-in-out;
+}
+
+/* Career Selection Box */
+.career-selection-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Input Fields */
+.career-input-one,
+.career-input-two,
+.career-industry-select,
+.career-experience-select {
+  width: 250px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.career-input-one:focus,
+.career-input-two:focus,
+.career-industry-select:focus,
+.career-experience-select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Compare Button */
+.career-compare-btn {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.career-compare-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #0099ff);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Error Message */
+.career-error-message {
+  color: #d32f2f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Career Comparison Table */
+.career-comparison-table {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Table Title */
+.career-comparison-subtitle {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+.career-comparison-results {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.career-comparison-results th,
+.career-comparison-results td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.career-comparison-results th {
+  background: #007bff;
+  color: white;
+}
+
+.career-comparison-results tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.career-comparison-results tr:hover {
+  background: #e3f2fd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .career-comparison-title {
+      font-size: 1.8rem;
+  }
+
+  .career-selection-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .career-input-one,
+  .career-input-two,
+  .career-industry-select,
+  .career-experience-select {
+      width: 90%;
+      max-width: 350px;
+  }
+
+  .career-comparison-results th,
+  .career-comparison-results td {
+      font-size: 14px;
+      padding: 10px;
+  }
+}

@@ -1,0 +1,114 @@
+/* Main Wrapper */
+.ats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Input Panel (Left Side) */
+  .input-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .input-panel:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  .upload-btn, .check-btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .upload-btn:hover, .check-btn:hover {
+    background: #ff3b3b;
+    transform: scale(1.05);
+  }
+  
+  .ats-score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  /* Preview Panel (Right Side) */
+  .preview-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .preview-panel:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resume-preview {
+    
+    height: 600px;
+    border: 2px dashed #aaa;
+    display: flex;
+    overflow: auto; /* ✅ Allow Scrolling */
+    margin-top: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    cursor: grab; /* ✅ Indicate Draggable */
+  }
+  
+  /* Make Scrollbar Visible for Desktop */
+  .resume-preview::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .resume-preview::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ats-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .input-panel, .preview-panel {
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .resume-preview {
+      height: 300px;
+    }
+  }
+  

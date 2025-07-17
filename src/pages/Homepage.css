@@ -1,0 +1,776 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* CTA Button Styles */
+.cta {
+    background: #ffcc00;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta.upload {
+    background: #ff5733;
+    color: white;
+}
+
+/* Hover Effects */
+.cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+  
+/* Animation Effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f0f2f5, #ffffff);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Individual Stat Item */
+.stat-item {
+    background: #ffffff;
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-width: 250px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animated Background Effect */
+.stat-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(0, 174, 255, 0.2);
+    transition: left 0.5s ease-in-out;
+}
+
+.stat-item:hover::before {
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 80%;
+    }
+}
+
+
+/* Job Finder Section */
+.job-finder2 {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0px 10px 30px rgba(255, 118, 136, 0.3);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Section Heading */
+.job-finder h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Input Fields */
+.job-finder input {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Input Placeholder & Focus Effect */
+.job-finder input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.job-finder input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Search Button */
+.job-finder button {
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    color: #ff4081;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Hover Effect */
+.job-finder button:hover {
+    background: #ff4081;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Keyframe Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-finder {
+        padding: 40px 15px;
+        
+    }
+
+    .job-finder h2 {
+        font-size: 1.8rem;
+    }
+
+    .job-finder input {
+        width: 100%;
+    }
+
+    .job-finder button {
+        width: 90%;
+    }
+}
+
+/* Resume & Profile Optimization & Skill Gap Analysis */
+.resume-optimization, .skill-gap-analysis {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Resume Optimization Background */
+.resume-optimization {
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    box-shadow: 0px 10px 30px rgba(76, 175, 80, 0.3);
+}
+
+/* Skill Gap Analysis Background */
+.skill-gap-analysis {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    box-shadow: 0px 10px 30px rgba(255, 152, 0, 0.3);
+}
+
+/* Section Titles */
+.resume-optimization h2, .skill-gap-analysis h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Section Paragraph */
+.resume-optimization p, .skill-gap-analysis p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* CTA Buttons */
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Resume Optimization CTA */
+.upload {
+    background: white;
+    color: #4CAF50;
+}
+
+/* Skill Gap Analysis CTA */
+.skill-gap-analysis .cta {
+    background: white;
+    color: #ff9800;
+}
+
+/* CTA Hover Effects */
+.cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Floating Animation */
+.resume-optimization::after, .skill-gap-analysis::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: -40px;
+    left: -40px;
+    animation: floatBubble 5s infinite ease-in-out alternate;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatBubble {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(30px, 30px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-optimization, .skill-gap-analysis {
+        padding: 40px 15px;
+    }
+
+    .resume-optimization h2, .skill-gap-analysis h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section Title */
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Auto-scrolling animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Inner wrapper to repeat testimonials */
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Section Title */
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Carousel Container */
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Inner wrapper for looping */
+.carousel-inner {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section Title */
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+/* Testimonial Box */
+.testimonial-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 1.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+/* User Image */
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4A90E2;
+}
+
+/* Testimonial Text */
+.testimonial-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* General Section Styling */
+.featured-jobs,
+.career-blog {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.featured-jobs:hover,
+.career-blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.featured-jobs h2,
+.career-blog h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Descriptions */
+.featured-jobs p,
+.career-blog p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background: #4A90E2;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cta:hover {
+    background: #357ABD;
+    transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-jobs,
+    .career-blog {
+        padding: 40px 15px;
+    }
+
+    .featured-jobs h2,
+    .career-blog h2 {
+        font-size: 1.7rem;
+    }
+
+    .featured-jobs p,
+    .career-blog p {
+        font-size: 1rem;
+    }
+}
+
+
+/* General Section Styling */
+.chatbot,
+.call-to-action {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.chatbot:hover,
+.call-to-action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.chatbot h2,
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Descriptions */
+.chatbot p,
+.call-to-action p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Chatbot Animation */
+.chatbot {
+    background: url('https://source.unsplash.com/800x600/?ai,chatbot') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.chatbot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.chatbot h2,
+.chatbot p {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* CTA Button Styling */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background: #4A90E2;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cta.upload {
+    background: #28a745;
+}
+
+.cta:hover {
+    background: #357ABD;
+    transform: scale(1.05);
+}
+
+.cta.upload:hover {
+    background: #218838;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chatbot,
+    .call-to-action {
+        padding: 40px 15px;
+    }
+
+    .chatbot h2,
+    .call-to-action h2 {
+        font-size: 1.7rem;
+    }
+
+    .chatbot p,
+    .call-to-action p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,626 @@
+/* General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+/* General Styling */
+.resume-analysis {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* ✅ Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* ✅ Upload Section */
+  .upload-section {
+    background: white;
+    padding: 40px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .upload-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .upload-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  /* ✅ Upload Box */
+  .upload-box {
+    border: 3px dashed #007bff;
+    padding: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 10px;
+  }
+  
+  .upload-box:hover {
+    background: rgba(0, 123, 255, 0.1);
+    transform: scale(1.02);
+  }
+  
+  /* File Input */
+  .upload-box input {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* ✅ Upload Button */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+  
+  /* ✅ Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    .hero p {
+      font-size: 0.9rem;
+    }
+    button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
+  
+  /* ✅ Resume Analysis Output */
+.analysis-output {
+    background: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .analysis-output:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .analysis-output h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .analysis-output p {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+  .analysis-output strong {
+    color: #333;
+  }
+  
+  .analysis-output a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .analysis-output a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* ✅ AI Score */
+  .analysis-output h3 {
+    font-size: 1.5rem;
+    color: #ff7f50;
+    margin-top: 20px;
+  }
+  
+  /* ✅ Suggestions List */
+  .analysis-output ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .analysis-output li {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .analysis-output li:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: scale(1.02);
+  }
+  
+  /* ✅ Job Matching Section */
+  .job-matches {
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .job-matches h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* ✅ Job Listings */
+  .job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .job-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .job-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .job-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .job-card a:hover {
+    background: #0056b3;
+  }
+  
+  /* ✅ Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .analysis-output h2,
+    .job-matches h2 {
+      font-size: 1.8rem;
+    }
+    .job-card h3 {
+      font-size: 1.3rem;
+    }
+    .analysis-output h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .analysis-output h2,
+    .job-matches h2 {
+      font-size: 1.6rem;
+    }
+    .analysis-output li {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+    .job-card h3 {
+      font-size: 1.2rem;
+    }
+    .job-card p {
+      font-size: 0.9rem;
+    }
+    .job-card a {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* ✅ Download & Save Resume */
+.download-resume {
+    background: linear-gradient(135deg, #ff7f50, #ff5733);
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .download-resume h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .download-resume button {
+    background: white;
+    color: #ff5733;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .download-resume button:hover {
+    background: #ff5733;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .download-resume button:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+  /* ✅ Testimonials Section */
+  .testimonials {
+    background: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* ✅ Live Stats */
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1.8s ease-in-out;
+  }
+  
+  .stat-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+  }
+  
+  .stat-box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* ✅ Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .download-resume h2,
+    .testimonials h2 {
+      font-size: 1.8rem;
+    }
+    
+    .stats-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .stat-box {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .download-resume h2,
+    .testimonials h2 {
+      font-size: 1.6rem;
+    }
+    
+    .testimonial p {
+      font-size: 0.9rem;
+    }
+  
+    .stat-box {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  }
+  
+ /* ✅ FAQ & Help */
+.faq-container {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .faq-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .faq-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-item h4 {
+    font-size: 1.2rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .faq-item p {
+    display: none;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .faq-item:hover p {
+    display: block;
+  }
+  
+  /* ✅ AI Chatbot, ATS Checker & Cover Letter Generator */
+  .chatbot-container,
+  .ats-container,
+  .cover-container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .chatbot-container h3,
+  .ats-container h3,
+  .cover-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .chatbot-container button,
+  .ats-container button,
+  .cover-container button {
+    background: white;
+    color: #2575fc;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .chatbot-container button:hover,
+  .ats-container button:hover,
+  .cover-container button:hover {
+    background: #2575fc;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* ✅ Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .faq-container,
+    .chatbot-container,
+    .ats-container,
+    .cover-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .faq-container h2,
+    .chatbot-container h3,
+    .ats-container h3,
+    .cover-container h3 {
+      font-size: 1.5rem;
+    }
+  
+    .faq-item h4 {
+      font-size: 1rem;
+    }
+  }
+  

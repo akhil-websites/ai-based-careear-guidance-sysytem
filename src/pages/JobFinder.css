@@ -1,0 +1,206 @@
+/* Job Finder Page Container */
+.job-finder-page-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Hero Section (Full Width) */
+.job-finder-hero {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Hero Heading */
+.hero-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Hero Description */
+.hero-description {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  opacity: 0.9;
+  animation: slideIn 1.2s ease-in-out;
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* Job & Internship Listings Section */
+.job-listings-section,
+.internship-listings-section {
+  background: white;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Section Headings */
+.job-listings-heading,
+.internship-listings-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Job & Internship Listings */
+.job-listings-list,
+.internship-listings-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Individual Job & Internship Items */
+.job-listing-item,
+.internship-listing-item {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover Effect */
+.job-listing-item:hover,
+.internship-listing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Job & Internship Titles */
+.job-title,
+.internship-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+/* Job & Internship Details */
+.job-company,
+.internship-company,
+.job-location,
+.internship-location,
+.job-description,
+.internship-description {
+  font-size: 1rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* Apply Now Button */
+.job-apply-link,
+.internship-apply-link {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.job-apply-link:hover,
+.internship-apply-link:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* No Listings Message */
+.no-job-listings-message,
+.no-internship-listings-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+      font-size: 2.2rem;
+  }
+  
+  .hero-description {
+      font-size: 1.1rem;
+  }
+
+  .job-listings-section,
+  .internship-listings-section {
+      padding: 30px 20px;
+  }
+
+  .job-title,
+  .internship-title {
+      font-size: 1.3rem;
+  }
+
+  .job-apply-link,
+  .internship-apply-link {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+}

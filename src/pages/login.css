@@ -1,0 +1,167 @@
+/* Login Page Container */
+.login-auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 20px;
+}
+
+/* Login Card */
+.login-auth-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.login-auth-card h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Input Fields */
+.login-input {
+  width: 90%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Message */
+.login-error {
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* Login Options */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-forgot-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Google Login Button */
+.login-google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: white;
+  color: #444;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-google-btn:hover {
+  background: #f8f9fa;
+  border-color: #007bff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Already Have an Account */
+.login-auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-auth-card p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-auth-card p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-auth-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-input {
+    padding: 10px;
+  }
+
+  .login-button {
+    padding: 10px;
+  }
+
+  .login-google-btn {
+    padding: 10px;
+  }
+}
